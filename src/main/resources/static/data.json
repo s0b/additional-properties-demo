@@ -1,0 +1,52 @@
+{
+  "total": 3709,
+  "version": 4,
+  "201fe2a0": [
+    "codeDynamicItem1",
+    293,
+    63700,
+    19,
+    "nameDynamicItem1",
+    "",
+    "",
+    "",
+    0,
+    -64
+  ],
+  "18147a62": [
+    "codeDynamicItem2",
+    237,
+    40000,
+    478,
+    "nameDynamicItem2",
+    "string1",
+    "string2",
+    "string3",
+    0,
+    0
+  ],
+  "1cbd607e": [
+    "codeDynamicItem3",
+    347,
+    63100,
+    9,
+    "nameDynamicItem3",
+    "string1",
+    "string2",
+    "string3",
+    0,
+    0
+  ],
+  "statistics": {
+    "available": {
+      "type1": 3305,
+      "type2": 76,
+      "type3": 71
+    },
+    "unavailable": {
+      "type1": 1283,
+      "type2": 15,
+      "type3": 20
+    }
+  }
+}

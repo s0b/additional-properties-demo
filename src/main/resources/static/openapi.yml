@@ -1,0 +1,60 @@
+openapi: 3.0.2
+info:
+  version: 1.0.0
+  title: Mock data
+servers:
+  - url: "http://localhost:8080/"
+tags:
+  - name: Mock
+paths:
+  /mock:
+    get:
+      tags:
+        - Mock
+      operationId: getMockData
+      responses:
+        '200':
+          description: "OK"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/MockResponse'
+components:
+  schemas:
+    MockResponse:
+      type: object
+      properties:
+        total:
+          type: integer
+          example: 12721
+        version:
+          type: integer
+          example: 4
+        statistics:
+          type: object
+          properties:
+            available:
+              type: object
+              properties:
+                type1:
+                  type: number
+                type2:
+                  type: number
+                type3:
+                  type: number
+            unavailable:
+              type: object
+              properties:
+                type1:
+                  type: number
+                type2:
+                  type: number
+                type3:
+                  type: number
+      additionalProperties:
+        type: array
+        items:
+          oneOf:
+            - type: string
+              nullable: true
+            - type: integer
